@@ -13,7 +13,7 @@ sudo dd if=RESCUE64-1.15.1-87-SHA512.img of=/dev/sd? bs=1k
 sudo eject /dev/sd?
 ```
 
-Be sure to replace the **`?`** with the appropriate device letter. After creating the boot stick, reboot the target computer. Ensure the computer has **UEFI** and **CSM** support enabled before booting. When the recovery image has finished booting, you will see a login prompt. Type `root` to login and begin the setup process. To configure your drive run the following commands:
+Be sure to replace the **`?`** with the appropriate device letter. After creating the boot stick, reboot the target computer. Ensure the computer has **UEFI** support enabled before booting. When the recovery image has finished booting, you will see a login prompt. Type `root` to login and begin the setup process. To configure your drive run the following commands:
 
 ```sh
 gunzip /usr/sedutil/UEFI64-*.img.gz
